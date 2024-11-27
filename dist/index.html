@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body class="bg-purple-100 flex min-h-screen justify-center items-center">
+    <div class="block" id="LoginForm">
+        <form class="bg-white w-[25rem] h-96 rounded-lg flex flex-col justify-center items-center">
+            <div>
+                <h1 class="pt-5 font-bold text-3xl text-center">Login</h1>
+
+                <div id="loginMessageBox" class="pt-2 text-lg font-semibold"></div>
+
+                <div>
+                    <h2 class="pt-4 font-semibold">Email</h2>
+                    <input class="bg-gray-300 w-[22rem] h-10 rounded-md p-2 outline-none" type="text" id="form_username_login" placeholder="Enter Username/Email">
+                </div>
+                <div>
+                    <h2 class="pt-4 font-semibold">Password</h2>
+                    <input class="bg-gray-300 w-[22rem] h-10 rounded-md p-2 outline-none" type="password" id="form_password_login" placeholder="Enter Password">
+                </div>
+                <div class="pt-4">
+                    <button class="bg-blue-500 text-white w-[22rem] h-10 rounded-md hover:bg-blue-600 hover:scale-95 transition-transform ease-in-out duration-200">Submit</button>
+                </div>
+                <div class="pt-4">
+                    <a href="#" class="text-blue-500 flex justify-center" id="forgetPass">Forgot Username or Password?</a>
+                </div>
+                <div class="pt-2">
+                    <a href="#" class="text-blue-500 flex justify-center" id="dontAcc">Don't have an account? Signup now!</a>
+                </div>
+            </div>
+        </form> 
+    </div> 
+    
+    
+    <div class="hidden" id="SignupForm">
+        <form class="bg-white w-[25rem] h-[33rem] rounded-lg flex flex-col justify-center items-center">
+            <div>
+                <h1 class="pt-5 font-bold text-3xl text-center">Signup</h1>
+
+                <div id="signupMessageBox" class="pt-2 text-lg font-semibold"></div>
+
+                <!-- Username Field -->
+                <div>
+                    <h2 class="pt-4 font-semibold">Username</h2>
+                    <input class="bg-gray-300 w-[22rem] h-10 rounded-md p-2 outline-none" type="text" id="form_username_signup" placeholder="Enter Username">
+                </div>
+
+                <!-- Email Field -->
+                <div>
+                    <h2 class="pt-4 font-semibold">Email</h2>
+                    <input class="bg-gray-300 w-[22rem] h-10 rounded-md p-2 outline-none" type="email" id="form_email_signup" placeholder="Enter Email">
+                </div>
+
+                <!-- Password Field -->
+                <div>
+                    <h2 class="pt-4 font-semibold">Password</h2>
+                    <input class="bg-gray-300 w-[22rem] h-10 rounded-md p-2 outline-none" type="password" id="form_password_signup" placeholder="Enter Password">
+                </div>
+
+                <!-- Confirm Password Field -->
+                <div>
+                    <h2 class="pt-4 font-semibold">Confirm Password</h2>
+                    <input class="bg-gray-300 w-[22rem] h-10 rounded-md p-2 outline-none" type="password" id="form_confirm_password_signup" placeholder="Confirm Password">
+                </div>
+
+                <!-- Submit Button -->
+                <div class="pt-4">
+                    <button class="bg-blue-500 text-white w-[22rem] h-10 rounded-md hover:bg-blue-600 hover:scale-95 transition-transform ease-in-out duration-200">Signup</button>
+                </div>
+
+                <!-- Login Link -->
+                <div class="pt-4">
+                    <a href="#" class="text-blue-500 flex justify-center" id="haveAcc">Already have an account? Login now!</a>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
